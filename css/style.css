@@ -1,0 +1,18 @@
+:root{
+    --background:#222;
+    --DragonBallOrange:#FF6F00;
+    --DragonBallOrangeTransparent:#FF6F0055;
+    --DragonBallBlue:#1565C0;
+    --DragonBallYellow:#FFD600;
+    --textColor:#EEE;
+    --shadowColor: #a5a5a588;
+    --marginPrincipal: 16px;
+    --fontPrincipal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontSecundary: 'Courier New', Courier, monospace;
+}
+body{
+    /* border: #FF6F00 4px solid; */
+}
+h1{
+    /* border: #FF6F00 4px solid; */
+}

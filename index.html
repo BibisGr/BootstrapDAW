@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>FrikiBay - Tu tienda de artículos frikis</title>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                    href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
+                        <path
+                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+                    </svg>
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"> <input type="search"
+                        class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end"> <button type="button" class="btn btn-outline-light me-2">Login</button> <button
+                        type="button" class="btn btn-warning">Sign-up</button> </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">¡Bienvenido a FrikiBay!</h1>
+                <p class="col-lg-10 fs-4">Tu tienda online para los artículos más geniales de universos fantásticos. Desde figuras de acción hasta cómics raros, encuentra todo lo que necesitas para tu colección. ¡Crea tu cuenta y accede a ofertas exclusivas!</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3"> <input type="email" class="form-control" id="floatingInput"
+                            placeholder="nombre@ejemplo.com"> <label for="floatingInput">Correo electrónico</label> </div>
+                    <div class="form-floating mb-3"> <input type="password" class="form-control" id="floatingPassword"
+                            placeholder="Contraseña"> <label for="floatingPassword">Contraseña</label> </div>
+                    <div class="checkbox mb-3"> <label> <input type="checkbox" value="remember-me"> Recuérdame
+                        </label> </div> <button class="w-100 btn btn-lg btn-primary" type="submit">Crear cuenta</button>
+                    <hr class="my-4"> <small class="text-body-secondary">Al hacer clic en Crear cuenta, aceptas nuestros términos de
+                        uso.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Destacados</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Figuras Marvel</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>Earth</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>3d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cómics Vintage DC y Marvel
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>Pakistan</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>4d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Funko Pop Edición Limitada</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>California</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>5d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="display-1 mb-5 text-center">Planes de Suscripción</h1>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Explorador</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0<small
+                                class="text-body-secondary fw-light">/mes</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Acceso a catálogo completo</li>
+                            <li>Descuentos del 5%</li>
+                            <li>Soporte por correo</li>
+                            <li>Envíos estándar gratis</li>
+                        </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Registrarse gratis</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Coleccionista</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$9.99<small
+                                class="text-body-secondary fw-light">/mes</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Descuentos del 15%</li>
+                            <li>Acceso a ventas privadas</li>
+                            <li>Soporte prioritario 24/7</li>
+                            <li>Envío express gratis</li>
+                        </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Comenzar ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Friki VIP</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$24.99<small
+                                class="text-body-secondary fw-light">/mes</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Descuentos del 30%</li>
+                            <li>Acceso a ediciones limitadas</li>
+                            <li>Soporte VIP prioritario</li>
+                            <li>Envío exprés + regalo sorpresa</li>
+                        </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contáctanos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Action Figure Ironman de colección. Figura articulada con detalles premium y acabados metalizado. Perfecta para coleccionistas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$34.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Funko Pop de Spider-Man. Edición limitada con caja de colección premium. Figura vinilo de 10 cm con detalles detallados.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$18.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Cómic Amazing Spider-Man #1 (Reimpresión). En excelente estado. Tapa dura con estuche de protección. Incluye certificado de autenticidad.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$45.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Lightsaber Réplica de Obi-Wan. Sonido y luz LED interactivos. Perfecta para fanáticos de Star Wars. Incluye soporte de exposición.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$79.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Ajedrez de Harry Potter. Tablero con piezas de movimiento automático. Edición de coleccionista con caja de lujo. Regalo perfecto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$89.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Cartas Pokémon Charizard Base Set 1ª Edición. PSA 8. Rara y muy codiciada. Incluye estuche de protección y certificado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$2,499</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Diorama La Comarca Señor de los Anillos. Réplica oficial hiper detallada. Incluye figuras articuladas. Para coleccionistas de nivel experto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$149.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Réplica Casco Stormtrooper Star Wars. Tamaño real con interior acolchado. Visor funcional. Decoración de pared o colección.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$129.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Manga Completo Demon Slayer (Kimetsu no Yaiba) Volúmenes 1-23. Edición en español. Tapa dura de colección con estuche.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Ver</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</button> </div> <small
+                                    class="text-body-secondary">$249.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice"
+                            role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small
+                                    class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tienda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Planes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Preguntas Frecuentes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 FrikiBay, Inc - Tu tienda de artículos frikis favorita</p>
+        </footer>
+    </div>
+</body>
+
+</html>

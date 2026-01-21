@@ -44,17 +44,91 @@
 
     <main>
         <!-- aqui va el contenido de la página -->
-         Tienda
+        <div class="container">
+            <h1 class="display-1 mb-5 text-center">Tienda de Artículos Frikis</h1>
+            <div class="row justify-content-between g-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g17/M00/1A/D9/rBVa4mIt8e6ASBosAAByaH_wwbI227.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Levi Ackerman Figure</h5>
+                        <p class="card-text">Figura de Vinilo de Levi Ackerman, personaje de Attack on Titan.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#LeviFigure">Ver más</button>
+                    </div>
+                </div>
+
+                <!-- Modal sections -->
+                <div class="modal fade" id="LeviFigure" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">`
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header flex-column">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Levi Ackerman Figure</h1>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g17/M00/1A/D9/rBVa4mIt8e6ASBosAAByaH_wwbI227.jpg"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title">Levi Ackerman Figure</h5>
+                                <p class="card-text">Figura de Vinilo de Levi Ackerman, personaje de Attack on Titan.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table table-striped-columns table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
     </main>
 
-   
+
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
                 <li class="nav-item"><a href="Tienda.html" class="nav-link px-2 text-body-secondary">Tienda</a></li>
-                <li class="nav-item"><a href="suscripciones.html" class="nav-link px-2 text-body-secondary">Suscripciones</a></li>
-                <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-body-secondary">Preguntas Frecuentes</a></li>
+                <li class="nav-item"><a href="suscripciones.html"
+                        class="nav-link px-2 text-body-secondary">Suscripciones</a></li>
+                <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-body-secondary">Preguntas
+                        Frecuentes</a></li>
                 <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
             </ul>
             <p class="text-center text-body-secondary">© 2025 FrikiBay, Inc - Tu tienda de artículos frikis favorita</p>
